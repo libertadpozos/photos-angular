@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { GetDataService } from './../../services/get-data.service'
-import { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } from 'constants';
 
 
 @Component({
@@ -11,7 +10,11 @@ import { SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS } from 'constants';
 export class ListComponent implements OnInit {
 
   public images =[];
-  public title= "título"
+  public title = "";
+  public source = "";
+  public brief ="";
+  public likes ="";
+  public references ="";
 
   constructor(private _getDataService: GetDataService ) { }
 

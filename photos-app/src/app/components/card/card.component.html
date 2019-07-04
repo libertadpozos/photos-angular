@@ -1,5 +1,10 @@
-<div>
-    <p>card</p>
-    <p></p>
-
+<div class="card" [style.background-image]="'url(' + source +')'"  [style.background-size]="'cover'" [style.background-repeat]="'no-repeat'">
+    <h2 class="title__card">{{title}}</h2>
+    <div class="more-info__container">
+    <p class="brief__card">{{brief}}</p> 
+    <div class="numbers__container">
+    <p class="likes__card">{{likes}}</p> 
+    <p class="references__card">{{references}}</p> 
+    </div>
+    </div>
 </div>

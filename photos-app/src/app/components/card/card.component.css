@@ -1,0 +1,21 @@
+.card{
+    color: white;
+    height: 200px;
+}
+.title__card{
+    font-size: 25px;
+    margin:0px;
+    margin-left:10px;
+}
+.more-info__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.numbers__container{
+    display: flex;
+    font-size: 15;
+}
+.hide{
+    display:none;
+}

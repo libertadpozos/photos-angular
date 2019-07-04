@@ -1,9 +1,7 @@
 <div>
-    <p>lista</p>
-    <ul *ngFor="let image of images">
-        <li>
-            <p>{{image.title}}</p>
-            <app-card ></app-card>
+    <ul class="images__list"  class="images__list">
+        <li *ngFor="let image of images" class="item___list">
+            <app-card title="{{image.title}}" source="{{image.owner.thumbUrl}}" brief={{image.brief}} likes={{image.likes}} references={{image.references}}></app-card>
         </li>
     </ul>
 </div>
