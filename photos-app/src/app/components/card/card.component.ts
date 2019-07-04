@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetDataService } from './../../services/get-data.service';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  
 
+  public images =[]
+
+  constructor(private _getDataService: GetDataService ) { }
+ 
   ngOnInit() {
+    this._getDataService.getCategories()
+    .subscribe(data => this.images=data);
   }
 
 }
